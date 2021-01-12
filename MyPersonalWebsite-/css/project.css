@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+body{
+margin: 0;
+text-align: center;
+box-sizing: border-box;
+padding: 0;
+}
+*{
+  box-sizing: border-box;
+}
+hr{
+  border-style: dotted;
+  border-color: black;
+  border-width: 15px;
+  border-bottom: none;
+  margin: 100px auto;
+  width: 6%;
+}
+.neon {
+  font-size: 110px;
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #fff,
+    0 0 40px #0ff,
+    0 0 80px #0ff,
+    0 0 90px #0ff,
+    0 0 100px #0ff,
+    0 0 150px #0ff;
+}
+h1{
+text-align: center;
+font-family: 'Roboto', sans-serif;
+font-size: 54px;
+color: black;
+}
+
+#hero .content {
+  height:100%;
+  width:100%;
+  z-index:20;
+  position:absolute;
+  left:0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  top:0;
+}
+#hero img {
+  height:100vh;
+  width:100%;
+  background-position:absolute;
+  z-index:10;
+  object-fit:cover;
+}
+.projects{
+  text-align: center;
+}
+p{
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  color: grey;
+}
+
+.footer{
+  background-color:grey;
+  padding: 0.1px;
+}
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
+.ftr{
+  font-size: 15px;
+  color: white;
+}
+.ftry{
+  font-size: 20px;
+  color: white;
+}
